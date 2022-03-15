@@ -1,0 +1,21 @@
+:root {
+	--primary-color: "#0072ff";
+}
+.bubble.is-out {
+    /*--message-background-color: var(--message-out-background-color);*/
+	--message-background-color: "#0072ff";
+	background-color:"#0072ff";
+/*--message-out-background-color:"#0072ff";*/
+}
+
+.night {
+	--message-background-color: "#0072ff";
+	background-color:"#0072ff";
+	--primary-color: "#0072ff";
+
+}
+html {
+	--message-background-color: "#0072ff";
+	background-color:"#0072ff";
+	--primary-color: "#0072ff";
+}

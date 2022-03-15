@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<style>
+  		body {
+  			min-width:400px;
+  		}
+  		html {
+  			font-family: Arial;
+  		}
+.slidecontainer {
+  transform: translateY(-10px);
+  text-align: center;
+}
+.slider {
+  --SliderColor: hsl(50, 100%, 50%);
+  -webkit-appearance: none;
+  width: 60%;
+  margin: 50px auto;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: rgb(200, 200, 200);
+}
+
+/* --------------------------- webkit browsers */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: var(--SliderColor);
+  overflow: visible;
+  cursor: pointer;
+}
+/* -------------------------- Firefox */
+.slider::-moz-range-thumb { 
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 10px;
+  background-color: var(--SliderColor);
+  overflow: visible;
+  cursor: pointer;
+}
+.slider::-moz-focus-outer { border: 0; }
+
+
+  	</style>
+
+
+<style>
+
+input[type=radio]{
+  text-align: center;
+}
+label {
+   display: inline-block;
+    vertical-align: top;
+}
+</style>
+
+  </head>
+  <body>
+<div>
+  	<center>
+  	<h1>Telegram Magician  		<img src="magician.png" width="100"/></h1>
+  	<p>Alter the Telegram Web theme to your personal preference</p>
+    	<div class="slidecontainer">
+  <p>Select theme color: <input type="range" min="1" max="350" value="175" class="slider" style='width:30%;' name="colorInput"></p>
+    <div id="Example" style="background-color:blue; color:white; width:fit-content; border-radius: 12px; text-align: center; margin:auto;">
+    	
+
+    	<h3 style="padding-top:6px; padding-bottom: 6px; text-align: left; padding-left:10px;">Hello this is an example
+    		<small style="text-align: right; padding-right:5px; bottom: -2px;">
+    		<span style="margin-left:10px;filter: brightness(0.95); position: relative; bottom: -2px;">11:59 </span> &check;</small></h3>
+    </div>
+    <div style="width:100%;" id="radioButtons">
+      <form>
+      <input type="radio" id="black" name="fontText" value="black"><label for="black">Black Text</label>
+      <input type="radio" id="white" name="fontText" value="white"><label for="white">White Text</label><br>
+    </form>
+    </div>
+
+  <button id="save" style="width:80%; font-size: 125%; padding:5px;">Save</button>
+  <br>
+  <br>
+  <a href="#" id="reset" style="bottom:0;">Reset to default</a>
+    	<script src="popup.js"></script>
+	</center>
+  </body>
+</html>

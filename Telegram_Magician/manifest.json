@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+
+  "name": "Telegram Magician",
+  "version": "0.1.0",
+  "description": "Allows user customization of telegram web",
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+    "matches": ["https://web.telegram.org/*"],
+    "all_frames": true
+  }],
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+      "icons": {
+      "16": "/hat.png",
+      "32": "/hat.png",
+      "48": "/hat.png",
+      "128": "/hat.png"
+    },
+    "permissions": ["storage"]
+
+}
