@@ -30,7 +30,7 @@
     		chrome.storage.sync.set({ colorTheme: newColor });
 			chrome.storage.sync.set({ sliderValue: Slider.value });
             chrome.storage.sync.set({ fontColor: newFontText });
-            alert(newFontText);
+            
     		chrome.tabs.reload();
     	}
 
